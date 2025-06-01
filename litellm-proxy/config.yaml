@@ -23,3 +23,11 @@ model_list:
     litellm_params:
       model: openai/dall-e-3
       api_key: "os.environ/OPENAI_KEY"
+  - model_name: claude-sonnet-4
+    litellm_params:
+      model: claude-sonnet-4-20250514
+      api_key: "os.environ/ANTHROPIC_API_KEY"
+  - model_name: claude-opus-4
+    litellm_params:
+      model: claude-opus-4-20250514
+      api_key: "os.environ/ANTHROPIC_API_KEY"

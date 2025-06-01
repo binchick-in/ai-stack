@@ -9,6 +9,7 @@ services:
       - "4000:4000"
     environment:
       - OPENAI_KEY=${OPENAI_KEY}
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
 
   open-webui:
     image: ghcr.io/open-webui/open-webui:main
