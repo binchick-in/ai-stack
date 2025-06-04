@@ -1,6 +1,6 @@
 # ai-stack 🚀
 
-Welcome to **ai-stack**, your personal AI tech stack designed to integrate seamlessly with Google services and provide a robust platform for AI-driven applications.
+Welcome to **ai-stack**, your personal AI tech stack.
 
 ## Features 🌟
 
