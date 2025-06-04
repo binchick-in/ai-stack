@@ -9,26 +9,26 @@ requirements: google-api-python-client, google-auth-oauthlib, pytz
 version: 0.4.0
 licence: MIT
 """
-from typing import Literal
-from typing import TypeAlias
 from google.oauth2.credentials import Credentials
+from google.auth.transport.requests import Request
 from googleapiclient.discovery import build
 from datetime import datetime, timedelta
 import pytz
 
 REFRESH_TOKEN = None  # Fill this in!
-SCOPES = ["https://mail.google.com/"]
-GoogleAPIName: TypeAlias = Literal["gmail"]
+SCOPES = ["https://www.googleapis.com/auth/calendar"]
 
 
-def _build_service(api_name: GoogleAPIName, api_version: str):
+def _build_service(api_name: str, api_version: str):
     """Build and return Gmail API service object."""
     creds = Credentials.from_authorized_user_info(REFRESH_TOKEN, SCOPES)
+    if creds.expired:
+        creds.refresh(Request())
     return build(api_name, api_version, credentials=creds)
 
 
 class GoogleClient:
-    api_name: GoogleAPIName
+    api_name: str
     api_version: str
 
     def __init__(self):
