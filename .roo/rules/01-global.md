@@ -1,0 +1,1 @@
+Place all plans into .llm_plans/ at the root of this repo.
