@@ -4,11 +4,11 @@ Welcome to **ai-stack**, your personal AI tech stack.
 
 ## Features 🌟
 
-- **AI-Powered Proxies** 🤖: Leverage the power of AI with our `litellm-proxy` service, integrating with OpenAI and Anthropic APIs.
-- **User-Friendly Web Interface** 🌐: Access your tools through a sleek web UI powered by `open-webui`.
+- **AI-Powered Proxies**: Leverage the power of AI with our `litellm-proxy` service, integrating with OpenAI and Anthropic APIs.
+- **User-Friendly Web Interface**: Access your tools through a sleek web UI powered by `open-webui`.
 
-## Open WebUI Tools
-- **Google Calendar Integration** 📅: Fetch upcoming events effortlessly with our `GoogleCalendarClient`.
+## Open WebUI Tools 🛠️
+- **Google Calendar Integration**: Fetch upcoming events effortlessly with our `GoogleCalendarClient`.
 
 ## Quick Start 🚀
 
