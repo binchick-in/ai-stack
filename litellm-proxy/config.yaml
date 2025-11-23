@@ -35,3 +35,7 @@ model_list:
     litellm_params:
       model: gemini/gemini-2.5-flash-preview-04-17
       api_key: os.environ/GOOGLE_API_KEY
+  - model_name: sonnet-4-5
+    litellm_params:
+      model: claude-sonnet-4-5
+      api_key: "os.environ/ANTHROPIC_API_KEY"
